@@ -1,0 +1,38 @@
+#!/bin/bash
+
+SAMEDIR=$(dirname "$0")
+BASEDIR=$(cd "$SAMEDIR/../.." ; pwd)
+DB="$BASEDIR/build/example.db"
+DB_URL="jdbc:derby:$DB;create=true"
+
+function create_db() {
+    echo "creating $DB"
+    mkdir -p $(dirname "$DB")
+    java -Dij.database="$DB_URL" \
+        -jar $BASEDIR/lib/javadb/derbyrun.jar \
+        ij "$SAMEDIR/example-db.ddl"
+    echo
+}
+
+function drop_db() {
+    echo "removing $DB"
+    rm -rf "$DB"
+}
+
+
+case $1 in
+    create)
+	create_db ;;
+	
+    drop)
+	drop_db ;;
+    
+    recreate)
+	drop_db
+	create_db ;;
+    
+    *)
+	echo "usage: $0 {create|drop|recreate}"
+	exit 1
+	;;
+esac

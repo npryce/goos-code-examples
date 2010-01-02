@@ -1,0 +1,12 @@
+To run the code in this module, first run the following command to create the database:
+
+    testing-persistence/scripts/example-db create
+
+To delete the database again, run:
+
+    testing-persistence/scripts/example-db drop
+
+To recreate the database from scratch, deleting all the data in it, run:
+
+    testing-persistence/scripts/example-db recreate
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom-hamcrest-matcher/custom-hamcrest-matcher.iml" filepath="$PROJECT_DIR$/custom-hamcrest-matcher/custom-hamcrest-matcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diagnostics/diagnostics.iml" filepath="$PROJECT_DIR$/diagnostics/diagnostics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flexibility/flexibility.iml" filepath="$PROJECT_DIR$/flexibility/flexibility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing-asynchronous-systems/testing-asynchronous-systems.iml" filepath="$PROJECT_DIR$/testing-asynchronous-systems/testing-asynchronous-systems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing-multithreaded-code/testing-multithreaded-code.iml" filepath="$PROJECT_DIR$/testing-multithreaded-code/testing-multithreaded-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing-persistence/testing-persistence.iml" filepath="$PROJECT_DIR$/testing-persistence/testing-persistence.iml" />
+    </modules>
+  </component>
+</project>
+
