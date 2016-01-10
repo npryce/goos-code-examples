@@ -53,7 +53,7 @@ CREATE TABLE Address (
     country VARCHAR(255)
 );
 
-CREATE TABLE Customer_AuctionSiteLogin (
+CREATE TABLE Customer_AuctionSiteCredentials (
     customer_id INTEGER NOT NULL, 
     auctionSiteLogins_id INTEGER NOT NULL,
    
